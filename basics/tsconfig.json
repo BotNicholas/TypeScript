@@ -1,0 +1,8 @@
+//Is ignored if we compole TS file it from command line
+{
+    "compilerOptions": {
+        "removeComments": true,
+        "noEmitOnError": true, //if in TS file errors are present JS file won't be generated
+        "target": "es2015" //By default es3 is used. It knows only about var, and TS let will be transformed to var. If we specify JS standart to newer one we do not need noEmitOnError anymore, because JF will be compiled correctly and we will se error in brouser
+    }
+}
